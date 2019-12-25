@@ -68,7 +68,8 @@ $(document).ready(function () {
     }, delay);
   });
 
-  var mySwiper = new Swiper ('.swiper-container', {
+   //initialize swiper when document ready
+   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -84,9 +85,7 @@ $(document).ready(function () {
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width() + bullets.width() + 43);
-  bullets.css('left', prev.width() + 30);
-
-  new WOW().init();
+  next.css('left', prev.width() + 10 + bullets.width() + 10);
+  bullets.css('left', prev.width() + 10)
 
 });
